@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected By VorTex Cybersecurity!</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="VorTex Cybersecurity">
+    <meta name="description" content="VorTex Cybersecurity - Leading digital security solutions in Bangladesh">
+    <meta name="keywords" content="VorTex Cybersecurity, Cybersecurity, Digital Security, Cyber Defense, Bangladesh Security">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="VorTex Cybersecurity - Advanced Digital Defense">
+    <meta property="og:description" content="Premier cybersecurity solutions protecting Bangladesh's digital landscape">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vortex-security.com">
+    <meta property="og:site_name" content="VorTex Cybersecurity">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/api/placeholder/32/32" type="image/x-icon">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <style>
+        /* Reset and Variables */
+        :root {
+            --primary-color: #00ff7f;
+            --secondary-color: #ff6347;
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --accent-color: #0a0a0a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base Styles */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: rgba(10, 10, 10, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 255, 127, 0.15);
+            border: 1px solid rgba(0, 255, 127, 0.1);
+        }
+
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .header img:hover {
+            transform: scale(1.1);
+            border-color: var(--secondary-color);
+        }
+
+        .header h1 {
+            font-size: .5em;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Message Section */
+        .message {
+            font-size: 1.3em;
+            margin: 2rem auto;
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(10, 10, 10, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 255, 127, 0.1);
+            border: 1px solid rgba(0, 255, 127, 0.1);
+        }
+
+        /* Services Section */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .service-card {
+            background: rgba(10, 10, 10, 0.95);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 255, 127, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 20px rgba(0, 255, 127, 0.2);
+        }
+
+        .service-card i {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .service-card:hover i {
+            color: var(--secondary-color);
+        }
+
+        /* Audio Player Styling */
+        audio {
+            margin: 2rem 0;
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+            background: var(--accent-color);
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: auto;
+            padding: 1.5rem;
+            background-color: rgba(10, 10, 10, 0.95);
+            text-align: center;
+            border-top: 2px solid var(--primary-color);
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Animations */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px var(--primary-color);
+            }
+            to {
+                text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color), 0 0 30px var(--primary-color);
+            }
+        }
+
+        /* Particle Effect */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #000000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .message {
+                font-size: 1.1em;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Main Content -->
+    <div class="container animate__animated animate__fadeIn">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/SheikhCommunity/Community/refs/heads/main/IMG_2993.png" alt="VorTex Logo" loading="lazy">
+            <h1>VorTex Inc.</h1>
+        </div>
+
+        <div class="message animate__animated animate__fadeInUp">
+            <p>You're servers was hacked!</p>
+            <p>Contact with us for get back soon!</p>
+        </div>
+
+
+
+        <!-- Audio Player -->
+        <audio controls autoplay loop>
+            <source src="https://samuelpasaribu.github.io/mp3/black-music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Powered by © <a href="https://t.me/RektDevelopers" target="_blank">Rekt Developer</a> </p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Particles.js Configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#00ff7f' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00ff7f',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+</body>
+</html>
